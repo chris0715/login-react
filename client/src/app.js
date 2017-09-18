@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import  { render } from 'react-dom'
-
-
-render(<h1>Hello world!</h1>, document.getElementById('root'))
+import HomePage from './components/HomePage'
+import MiuTheme from 'material-ui/styles/MuiThemeProvider'
+render(<MiuTheme>
+    <HomePage />
+</MiuTheme>, document.getElementById('root'))
